@@ -93,7 +93,7 @@ function Home ({}) {
     return (
         <Grid container className={classes.root} direction="column">
             <Grid item container style={{height:"100px"}} justify="space-evenly" alignItems="center">
-                <Grid item md={8} sm={11}>
+                <Grid item md={8} xs={11}>
                     <Card style={{width:"100%",height:"60px",borderRadius:"8px"}} elevation={6}>
                     <Tabs value={value} onChange={handleChange} aria-label="simple tabs example" className={classes.tabs} variant="fullWidth">
                         <Tab label="รายการสั่งซื้อ" {...a11yProps(0)} />
@@ -115,7 +115,7 @@ function Home ({}) {
                 </Hidden>
             </Grid>
             <Grid item container justify="space-evenly">
-                <Grid item md={8} sm={11} style={{paddingTop:"8px"}}>
+                <Grid item md={8} xs={11} style={{paddingTop:"8px"}}>
                     {(value===0)&&<CFDashboard customserSearch={customserSearch} itemSearch={itemSearch} customerAccepted={customerAccepted} itemAccepted={itemAccepted}/>}
                     {(value===1)&&<AcceptedDashboard customserSearch={customserSearch} itemSearch={itemSearch} customerAccepted={customerAccepted} itemAccepted={itemAccepted}/>}
                     {(value===2)&&<StockLiveDashboard customserSearch={customserSearch} itemSearch={itemSearch} customerAccepted={customerAccepted} itemAccepted={itemAccepted}/>}

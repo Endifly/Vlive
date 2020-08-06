@@ -20,6 +20,7 @@ import KeyboardReturnIcon from '@material-ui/icons/KeyboardReturn';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
 const date = new Date()
+const darkGreen = "#00610b"
 
 const useStyle = makeStyles(()=>({
     root : {
@@ -30,9 +31,12 @@ const useStyle = makeStyles(()=>({
         borderRadius:"8px",
     },
     showDetail:{
-        border:"2px solid #525252",
+        border:"2px solid #00610b",
         height:"calc((100vh - 64px)*0.9 - 32px - 80px - 64px)",
         marginLeft:"16px",borderRadius:"8px"
+    },
+    divider : {
+        background:darkGreen,
     }
 }))
 const mockCF = [
@@ -131,7 +135,7 @@ function CFDashboard({customserSearch,itemSearch}) {
                                     <Typography style={{color:"gray",marginRight:"16px"}}>{`${orderDetail.item} x ${orderDetail.amount}`}</Typography>
                                     <Typography style={{color:"gray"}}>{`#${orderDetail.orderId}`}</Typography>
                                 </CardActionArea></Card>
-                                <Divider />
+                                <Divider className={classes.divider}/>
                             </Grid>
                         ))}
                     </Grid>

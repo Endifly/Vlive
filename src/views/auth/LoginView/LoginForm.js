@@ -22,8 +22,8 @@ function LoginForm({className,onSubmitSuccess,...rest}) {
     <Fragment>
     <Formik
       initialValues={{
-        email: 'finnix01',
-        password: 'finnix01finnix01'
+        email: 'mark01',
+        password: 'mark01mark01'
       }}
       validationSchema={Yup.object().shape({
         email: Yup.string().max(255).required('Email is required'),
