@@ -29,6 +29,10 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: "28px",
     letterSpacing: "0.05em",
   },
+  liveStatus : {
+    background:"orange",
+    marginRight:"16px",
+  }
 }));
 
 function TopBar({ onMobileNavOpen }) {
@@ -51,7 +55,8 @@ function TopBar({ onMobileNavOpen }) {
 
           </IconButton>
 
-          <Clock format={'HH:mm:ss'} ticking={true} timezone={'TH/Pacific'} className={classes.clock}/>
+          {/* <Button className={classes.liveStatus}>Live</Button> */}
+          <Clock format={'HH:mm:ss'} ticking={true} timezone={'Asia/Bangkok'} className={classes.clock}/>
           <IconButton color="inherit" component={RouterLink} to="/home">
             <HomeIcon />
           </IconButton>

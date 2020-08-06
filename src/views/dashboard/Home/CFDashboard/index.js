@@ -136,7 +136,7 @@ function CFDashboard({customserSearch,itemSearch}) {
                                     <Typography style={{color:"gray",marginRight:"16px"}}>{`${orderDetail.item} x ${orderDetail.amount}`}</Typography>
                                     <Typography style={{color:"gray"}}>{`#${orderDetail.orderId}`}</Typography>
                                 </CardActionArea></Card>
-                                <Divider />
+                                {/* <Divider /> */}
                             </Grid>
                         ))}
                     </Grid>
